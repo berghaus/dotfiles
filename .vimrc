@@ -310,4 +310,5 @@ set sidescroll=1
 set number
 set relativenumber
 nnoremap <leader>l :set norelativenumber!<CR>
+nnoremap <leader>ll :set invnumber<CR>
 
