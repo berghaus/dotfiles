@@ -63,6 +63,18 @@ Plugin 'groenewege/vim-less'
 " Vimscript for gist
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+" Markdown
+Plugin 'tpope/vim-markdown'
+" tmux integration
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+" ACK inside vim
+Plugin 'mileszs/ack.vim'
+" Javascript indentation and syntax support
+Plugin 'pangloss/vim-javascript'
+Plugin 'Shutnik/jshint2.vim'
+" Better CSS Syntax for Vim
+Plugin 'hail2u/vim-css3-syntax'
 
 filetype plugin indent on     " required
 filetype on
@@ -102,6 +114,7 @@ set title
 " access the yank registers
 map <leader>r :reg<CR>
 
+
 "change the current dir to file path unless working on /tmp
 autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
 
@@ -137,7 +150,6 @@ vnoremap . :norm.<cr>
  imap <C-v> <ESC>"+pa
 
 " ================ Colors  =================
-
 syntax enable
 set background=dark
 colorscheme solarized
