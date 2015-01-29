@@ -4,12 +4,13 @@
 [grep]
     linenumber = true
 [user]
-    name = Esteban J. G. Gabancho
-    email = esteban.gabancho@gmail.com
+    name = Frank Berghaus
+    email = frank.berghaus@cern.ch
 [github]
-    user = egabancho
+    user = berghaus
 [core]
     editor = vim
+    whitespace = trailing-space,space-before-tab
 [color]
     ui = true
 [alias]
