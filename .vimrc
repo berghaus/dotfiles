@@ -4,78 +4,8 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd! bufwritepost vimrc source ~/.vimrc
 let mapleader=","
 
-" =============== Vundle ===============
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-" let Vundle manage Vundle, required
-Plugin 'gmarik/vundle'
-
-" =============== Plugins ===============
-" Color schemes
-Plugin 'tomasr/molokai'
-Plugin 'altercation/vim-colors-solarized'
-" Fuzzy file, buffer, mru, tag, etc. finder
-Plugin 'kien/ctrlp.vim'
-" A cosa completion engine
-Plugin 'Valloric/YouCompleteMe'
-" Syntax checking hacks
-Plugin 'scrooloose/syntastic'
-" A tree explorer
-Plugin 'scrooloose/nerdtree'
-" Displays tags in a window, ordered by scope
-Plugin 'majutsushi/tagbar'
-" The ultimate snippet solution + default snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-" allows you to use <Tab> for all your insert completion needs
-Plugin 'ervandew/supertab'
-" Much simpler way to use some motions in vim
-Plugin 'Lokaltog/vim-easymotion'
-" All about surroundings: parentheses, brackets, quotes, XML tags
-Plugin 'tpope/vim-surround'
-" Visualize vim undo tree
-Plugin 'sjl/gundo.vim'
-" File-type sensible comments
-Plugin 'tomtom/tcomment_vim'
-" Better Rainbow Parentheses
-Plugin 'kien/rainbow_parentheses.vim'
-" Git wrapper so awesome, it should be illegal
-Plugin 'tpope/vim-fugitive'
-" Provides insert mode auto-completion for quotes, parens, brackets, etc.
-Plugin 'Raimondi/delimitMate'
-" Visually displaying indent levels in code
-Plugin 'nathanaelkane/vim-indent-guides'
-" Lean & mean status/tabline that's light as air
-Plugin 'bling/vim-airline'
-" Script for text filtering and alignment
-Plugin 'godlygeek/tabular'
-" Python virtualenv
-Plugin 'jmcantrell/vim-virtualenv'
-" Sublime Text style multiple selections
-Plugin 'terryma/vim-multiple-cursors'
-" Visually select increasingly larger regions of text
-Plugin 'terryma/vim-expand-region'
-" Syntax highlighting, indenting and autocompletion for LESS
-Plugin 'groenewege/vim-less'
-" Vimscript for gist
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
-" Markdown
-Plugin 'tpope/vim-markdown'
-" tmux integration
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-" ACK inside vim
-Plugin 'mileszs/ack.vim'
-" Javascript indentation and syntax support
-Plugin 'pangloss/vim-javascript'
-Plugin 'Shutnik/jshint2.vim'
-" Better CSS Syntax for Vim
-Plugin 'hail2u/vim-css3-syntax'
-
+" --- pathogen ---
+execute pathogen#infect()
 filetype plugin indent on     " required
 filetype on
 
@@ -230,7 +160,7 @@ filetype plugin on
 filetype indent on
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:▸\ ,trail:·
+set list listchars=tab:>-,trail:.
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
@@ -329,4 +259,5 @@ set number
 set relativenumber
 nnoremap <leader>l :set norelativenumber!<CR>
 nnoremap <leader>ll :set invnumber<CR>
+
 
