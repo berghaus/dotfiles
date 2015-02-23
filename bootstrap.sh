@@ -8,7 +8,7 @@ __ScriptVersion="0.1"
 cd $(dirname ${BASH_SOURCE})
 force=false
 backup=false
-branch='osx'
+branch='ubuntu'
 files=$(find . -maxdepth 1             \
                -not -name \.           \
                -not -name LICENSE      \
