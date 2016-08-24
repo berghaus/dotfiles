@@ -81,7 +81,7 @@ vnoremap . :norm.<cr>
 
 " ================ Colors  =================
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 
 " highlight trailing spaces in annoying red
