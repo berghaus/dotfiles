@@ -46,6 +46,10 @@ PS1="\[\033[00;32m\]\u\[\033[00m\]@\[\033[00;36m\]\h\[\033[00m\]:\[\033[00;33m\]
 
 }
 
+
 # --- Call function to customize prompt ---
 proml
 
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

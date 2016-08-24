@@ -1,6 +1,7 @@
-export PATH+=:/usr/local/bin
+export PATH+=:/usr/local/sbin
 export PATH+=:$HOME/bin
-export LANG="en_US.utf8"
-export LANGUAGE="en_US.utf8"
-export LC_ALL="en_US.utf8"
+export LANG="en_CA.UTF-8"
+export LANGUAGE="en_CA.UTF-8"
+export LC_ALL="en_CA.UTF-8"
 export WORKON_HOME=~/.virtualenvs
+export PATH="/usr/local/sbin:$PATH"
