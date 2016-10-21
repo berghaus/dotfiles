@@ -81,7 +81,7 @@ vnoremap . :norm.<cr>
 
 " ================ Colors  =================
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
 " highlight trailing spaces in annoying red
@@ -109,8 +109,8 @@ noremap <silent><leader>/ :nohlsearch<CR>
 
 " The Silver Searcher
 if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  " Use ack over grep
+  set grepprg=ack\ -k
 endif
 
 map <leader>g :grep
