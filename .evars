@@ -1,10 +1,9 @@
-export PATH+=:/usr/local/sbin
-export PATH+=:$HOME/bin
+export PATH=~/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export LANG="en_CA.UTF-8"
 export LANGUAGE="en_CA.UTF-8"
 export LC_ALL="en_CA.UTF-8"
 export WORKON_HOME=~/.virtualenvs
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH:/usr/local/texlive/2016/bin/x86_64-darwin"
 
 # export Java Home for EC2 CLI Tools
 export JAVA_HOME=$(/usr/libexec/java_home)

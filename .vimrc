@@ -36,7 +36,7 @@ nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_us
 
 "make :! work with aliases
-set shellcmdflag=-ic
+" set shellcmdflag=-ic
 
 " set xterm title
 set title
@@ -259,5 +259,3 @@ set number
 set relativenumber
 nnoremap <leader>l :set norelativenumber!<CR>
 nnoremap <leader>ll :set invnumber<CR>
-
-

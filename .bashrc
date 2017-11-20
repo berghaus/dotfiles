@@ -18,3 +18,6 @@ if [ -e ${HOME}/.alias ]; then
   source ${HOME}/.alias
 fi
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
